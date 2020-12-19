@@ -6,10 +6,13 @@
     <title>
         <%= title %>
     </title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/>
+    <link rel="stylesheet" href ="/css/home.css">
 </head>
 <body>
-    <h1>
-        Rendered from EJS
+    <h1 id="heading">
+        <i class="fas fa-paperclip"></i>
+        My contacts list 
     </h1>
     <div>
         <ul>
@@ -22,6 +25,9 @@
                 <p>
                     <%=i.phone %>
                 </p>
+                <a href="/delete-contact/?id=<%=i._id %>">
+                    Delete Contact
+                </a>
             </li>
             <%}%>
         </ul>
@@ -31,5 +37,6 @@
         <input type ="number" name ="phone" placeholder="Enter phone" required>
         <button type="submit">Add contact</button>
     </form>
+    <script type="text/javascript" src="/js/home.js"></script>
 </body>
 </html>
