@@ -21,11 +21,11 @@ let contactList=[
         phone:'980210'
     },
     {
-        name:'Sahil',
+        name:'Nameless',
         phone:'13455'
     },
     {
-        name :'Lodu',
+        name :'Proooo',
         phone :12456
     }
 ]
